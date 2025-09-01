@@ -37,10 +37,23 @@ postgres=# \l
 > 
 > ```
 > # hostname:port:database:username:password
+> # Connnecting to sampledb with the same user and password
 > # localhost:5432:sampledb:postgres:postgres
+> # Connnecting to all databases with the same user and password
 > localhost:5432:*:postgres:postgres
 > ```
+>
 > Need to change the permission like this:
+>
 > ```sh
 > chmod 600 ~/.pgpass
+> ```
+>
+> Now you can login to "postgres" (default) database as user "postgres" w/o giving password input
+>
+> ```sh
+> psql -U postgres -h localhost
+> postgres=# \c
+> psql (17.2, server 15.14 (Debian 15.14-1.pgdg13+1))
+> You are now connected to database "postgres" as user "postgres".
 > ```
