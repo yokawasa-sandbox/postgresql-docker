@@ -26,9 +26,9 @@ psql (17.2, server 15.14 (Debian 15.14-1.pgdg13+1))
 Type "help" for help.
 
 postgres=#
-postgres=# \c
+sampledb=# \c
 psql (17.2, server 15.14 (Debian 15.14-1.pgdg13+1))
-You are now connected to database "postgres" as user "postgres".
+You are now connected to database "sampledb" as user "postgres".
 postgres=# \l
 ```
 
