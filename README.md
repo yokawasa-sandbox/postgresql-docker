@@ -21,6 +21,15 @@ local-postgres   postgres:15   "docker-entrypoint.s…"   db        20 minutes a
 Test to connect postgreSQL instance (use 'postgres' for password)
 ```sh
 psql -h localhost -U postgres -d sampledb
+
+psql (17.2, server 15.14 (Debian 15.14-1.pgdg13+1))
+Type "help" for help.
+
+postgres=#
+postgres=# \c
+psql (17.2, server 15.14 (Debian 15.14-1.pgdg13+1))
+You are now connected to database "postgres" as user "postgres".
+postgres=# \l
 ```
 
 > [!TIP]
