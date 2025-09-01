@@ -23,4 +23,15 @@ Test to connect postgreSQL instance (use 'postgres' for password)
 psql -h localhost -U postgres -d sampledb
 ```
 
-
+> [!TIP]
+> Setup `$HOME/.pgpass`
+> 
+> ```
+> # hostname:port:database:username:password
+> # localhost:5432:sampledb:postgres:postgres
+> localhost:5432:*:postgres:postgres
+> ```
+> Need to change the permission like this:
+> ```sh
+> chmod 600 ~/.pgpass
+> ```
